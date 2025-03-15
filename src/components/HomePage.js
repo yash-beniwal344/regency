@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faCircleCheck, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
+import {  faCircleCheck, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import line from './images/Vector 32.png';
 import img from './images/bigimg.png';
 import logos from './images/logos-line.png';
@@ -16,15 +16,26 @@ import user3 from './images/user3.png';
 import user4 from './images/user4.png';
 import user5 from './images/ic.png';
 import inputicon from './images/input-icon.png';
-import logo from './images/logo WHITE 1.png'
+
+import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 const HomePage = () => {
+
+  const navigate = useNavigate();
+
+  const startwill = ()=>{
+    navigate('/will')
+  }
+  const getstarted = ()=>{
+    navigate('/start')
+  }
   return (
     <div className='main '>
       <div className='sec-one pb-5'>
         <div className='row'>
           <div className='text-side col-12 col-sm-12 col-md-6'>
             <div className='big-text '>
-              Plan Your Legacy Securely And Easily
+              Plan Your Legacy , Securely And Easily
             </div>
             <div className='line'>
               <img src={line} alt='line' />
@@ -33,7 +44,7 @@ const HomePage = () => {
               Create a legally-binding will in minutes, guided by experts and stored securely.
             </div>
             <div className='btn'>
-              <button className='start'>Start My Will</button>
+              <button className='start' onClick={startwill}>Start My Will</button>
               <button className='learn'><FontAwesomeIcon icon={faCirclePlay} style={{ marginRight: '5px' }} />Learn More</button>
             </div>
 
@@ -72,7 +83,7 @@ const HomePage = () => {
                 Creating a will doesn't have to be complicated. With our streamlined process, you can secure your family's future in just four easy steps. From answering a few basic questions to securely storing your final document, we guide you every step of the way to ensure peace of mind for you and your loved ones.
               </div>
               <div className="btn">
-                <button className='start'>Start My Will</button>
+                <button className='start' onClick={getstarted}>get started</button>
               </div>
               <div className="bott-text">
                 <div className="row">
@@ -363,70 +374,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="sec-seven">
-        <div className="inner-box">
-          <div className="row mb-5">
-            <div className="col-12 col-sm-12 col-md-5 ">
-              <div className="left">
-                <div className="img">
-                  <img src={logo} alt='logo' />
-                </div>
-                <div className="text">
-                  Secure Your Legacy, Today
-                </div>
-                <div className="input-div">
-                  <input type=' email' placeholder='enter your email' />
-                  <div className="icon">
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-            <div className="col-12 col-sm-12 col-md-7">
-              <div className="right">
-                <ul>
-                  <li className="head"><a href="">Solutions</a></li>
-                  <li className="li"><a href="">How It Works</a></li>
-                  <li className="li"><a href="">Create Your Will</a></li>
-                  <li className="li"><a href="">Pricing Plans</a></li>
-                  <li className="li"><a href="">Security</a></li>
-
-                </ul>
-                <ul>
-                  <li className="head"><a href="">Help & Support</a></li>
-                  <li className="li"><a href="">Terms of Use</a></li>
-                  <li className="li"><a href="">Contact Us</a></li>
-                  <li className="li"><a href="">Legal Resources</a></li>
-                  <li className="li"><a href="">User Guide</a></li>
-
-                </ul>
-                <ul>
-                  <li className="head"><a href="">Product</a></li>
-                  <li className="li"><a href="">Will</a></li>
-                  <li className="li"><a href="">LPA</a></li>
-                  <li className="li"><a href="">Trusts</a></li>
-                  <li className="li"><a href="">Calculators</a></li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="last">
-           
-              <div className="bott">
-                © 2024 Regency Inc. Copyright and rights reserved
-              </div>
-           
-           
-              <div className="bott">
-                Terms and Condtions + Privacy Policy
-              </div>
-           
-          </div>
-        </div>
-      </div>
+      <Footer/>
     </div>
   )
 }
