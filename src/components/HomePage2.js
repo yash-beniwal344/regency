@@ -6,7 +6,12 @@ import logos from './images/logos-line.png';
 import Footer from './Footer';
 
 import Plan from './Plan';
+import { useNavigate } from 'react-router-dom';
 const HomePage2 = () => {
+    let navigate = useNavigate()
+    const login = ()=>{
+navigate('/login')
+    }
     return (
         <div className='homepage2'>
             <div className="sec-one">
@@ -40,7 +45,7 @@ const HomePage2 = () => {
 
                             </div>
                             <div className='btn'>
-                                <button className='start'>Let's get started</button>
+                                <button className='start' onClick={login}>Let's get started</button>
                             </div>
                         </div>
                         <div className="col-12 col-sm-12 col-md-6 img-side">

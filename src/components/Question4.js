@@ -4,10 +4,14 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useNavigate } from 'react-router-dom'
 
+
 const Question4 = () => {
     const navigate = useNavigate();
     const back =()=>{
         navigate('/question_3')
+    }
+    const next =()=>{
+        navigate('/Question_5')
     }
   return (
     <div className='question3'>
@@ -53,7 +57,7 @@ const Question4 = () => {
                
             </div>
             <div className="btn">
-                <button >next</button>
+                <button onClick={next} >next</button>
             </div>
         </div>
     </div>

@@ -5,8 +5,13 @@ import img1 from './images/boys.png';
 import logos from './images/logos-line.png';
 import Footer from './Footer';
 import Plan from './Plan';
+import { useNavigate } from 'react-router-dom';
 
 const Lpa = () => {
+    let navigate = useNavigate()
+    const login = ()=>{
+navigate('/login')
+    }
   return (
     <div className='lpa'>
             <div className="sec-one">
@@ -37,7 +42,7 @@ const Lpa = () => {
 
                             </div>
                             <div className='btn'>
-                                <button className='start'>Let's get started</button>
+                                <button className='start' onClick={login}>Let's get started</button>
                             </div>
                         </div>
                         <div className="col-12 col-sm-12 col-md-6 img-side">
