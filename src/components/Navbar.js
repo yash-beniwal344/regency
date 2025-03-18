@@ -47,7 +47,7 @@ const home = ()=>{
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/will'>Will</Link></li>
 
-            <li className='startbtn py-3 px-4'><Link to='/login'>Get Started</Link></li>
+            <li className='startbtn '><Link to='/start'>Get Started</Link></li>
           </ul>
         </div>
       </div>

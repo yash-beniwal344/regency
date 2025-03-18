@@ -3,6 +3,7 @@ import left from './images/donor.png';
 import { faArrowLeft, faCircleUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, useNavigate } from 'react-router-dom';
+import Footer from './Footer';
 
 
 const Question10 = () => {
@@ -119,7 +120,7 @@ const Question10 = () => {
                     </div>
                 </div>
             </div>
-
+<Footer/>
         </div>
     )
 }

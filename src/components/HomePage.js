@@ -364,7 +364,7 @@ const HomePage = () => {
                 <label>email</label>
                 <input type='email' placeholder='enter your email' />
                 <label>message</label>
-                <input type='text' placeholder='what are you say?' />
+                <input type='text' className='mb-5' placeholder='what are you say?' />
                 <button>send</button>
                 <div className="bott">
                   or Start Free Trial

@@ -1,26 +1,26 @@
 import React from 'react'
+import Footer from './Footer'
+import { faArrowLeft, faCircleUser, faPenToSquare } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link, useNavigate } from 'react-router-dom';
-import left from './images/donor2.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faCircleUser } from '@fortawesome/free-solid-svg-icons';
-import Footer from './Footer';
+import left from './images/donor3.png';
 
-const Question13 = () => {
+const Question21 = () => {
     let navigate = useNavigate();
-    const back = () => {
-        navigate('/question_12')
+    const next = ()=>{
+        navigate('/question_22')
     }
-    const next = () => {
-        navigate('/question_14')
+    const back = ()=>{
+        navigate('/question_20')
     }
-    return (
-        <div className='question13'>
+  return (
+    <div className='question13'>
             <div className="sec-one">
                 <div className="inner-box">
-                    <div className="row">
+                    <div className="row">  
                         <div className="col-12 col-md-5 mb-4">
                             <div className="left-img">
-                                <img src={left} alt='procces' />
+                                <img src={left} alt='procces'/>
                             </div>
                         </div>
                         <div className="col-12 col-md-7">
@@ -37,53 +37,68 @@ const Question13 = () => {
 
                                     </div>
                                     <div className="que">
-                                        Add Attorney Information
+                                    Final Check: LPA Details
                                     </div>
                                     <div className="one-input">
-                                        <label>Title</label><br />
-                                        <select class="form-select py-3 mb-2" aria-label="Default select example">
-                                            <option selected>Open this select menu</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
+                                        <div className="edit"><label>Type of LPA</label><div className="tex"><FontAwesomeIcon icon={faPenToSquare} />Edit Details</div></div><br />
+                                        <input type='text' placeholder='Property and finance' />
                                     </div>
                                     <div className="row two-input">
                                         <div className="col-12 col-md-6">
-                                            <label>First Name</label><br />
-                                            <input type='text' />
+                                            <label>Donor Name</label><br/>
+                                            <input type='text' placeholder='Mr. John Bee'/>
                                         </div>
                                         <div className="col-12 col-md-6">
-                                            <label>Last Name </label><br />
-                                            <input type='text' />
+                                            <label>Donor Date of Birth</label><br/>
+                                            <input type='text' placeholder='1 January 1965'/>
                                         </div>
                                     </div>
-
+                                    <div className="row two-input">
+                                        <div className="col-12 col-md-6">
+                                            <label>Donor Email Address</label><br/>
+                                            <input type='email' placeholder='h.john@gmail.com'/>
+                                        </div>
+                                        <div className="col-12 col-md-6">
+                                            <label>Sign</label><br />
+                                            <input type='text' placeholder='yes'/>
+                                        </div>
+                                    </div>
+                                
                                     <div className="one-input">
-                                        <label>Date of Barth</label><br />
-                                        <input type='date' />
+                                        <label>Donor Address</label><br />
+                                        <input type='text' placeholder='12 Ridings Avenue, London, N21 2EL'/>
                                     </div>
                                     <div className="one-input">
-                                        <label>Email Address </label><br />
-                                        <input type='text' />
+                                        <label>When LPA Starts</label><br />
+                                        <input type='text' placeholder='As soon as its registered'/>
+                                    </div>
+                                    <div className="row two-input">
+                                        <div className="col-12 col-md-6">
+                                            <label>Attorney Name</label><br />
+                                            <input type='text' placeholder='Miss Medi Barand'/>
+                                        </div>
+                                        <div className="col-12 col-md-6">
+                                            <label>Attorney Date of Birth</label><br />
+                                            <input type='text' placeholder='4 April 1974'/>
+                                        </div>
                                     </div>
                                     <div className="one-input">
-                                        <label>Postcode </label><br />
-                                        <input type='text' placeholder='Find UK address' />
+                                        <label>Attorney Address </label><br />
+                                        <input type='text' placeholder='7 Ridings Avenue, London, N21 2EL' />
                                     </div>
-                                    <div className="man">
-                                        -Enter address manually
+                                  
+                                    <div className="one-input">
+                                        <label> Replacement Attorneys</label><br />
+                                        <input type='text' placeholder='No replacement attorneys' />
                                     </div>
                                     <div className="one-input">
-                                        <label> Enter Address</label><br />
-                                        <input type='text' />
+                                        <label>Certificate Provider</label><br />
+                                        <input type='text' placeholder='Not added' />
                                     </div>
-                                    <div className="att">
-                                        <span>-</span>Add another attorney
-                                    </div>
-
+                                    
                                     <div className="btn">
-                                        <button onClick={next} className='continue' >Add Attorney</button>
+                                        <button onClick={next} className='continue mb-2'>Confirm and Continue</button>
+                                        <button className='cancel'>Save for Later</button>
                                     </div>
                                 </div>
                                 <div className="two">
@@ -121,8 +136,7 @@ const Question13 = () => {
             </div>
 <Footer/>
         </div>
-        
-    )
+  )
 }
 
-export default Question13
+export default Question21

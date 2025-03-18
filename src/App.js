@@ -28,6 +28,13 @@ import Question11 from './components/Question11';
 import Question12 from './components/Question12';
 import Question13 from './components/Question13';
 import Question14 from './components/Question14';
+import Question15 from './components/Question15';
+import Question16 from './components/Question16';
+import Question17 from './components/Question17';
+import Question18 from './components/Question18';
+import { Question19 } from './components/Question19';
+import Question20 from './components/Question20';
+import Question21 from './components/Question21';
 
 
 function App() {
@@ -54,6 +61,13 @@ function App() {
           <Route path='/question_12' element={<Question12/>}/>
           <Route path='/question_13' element={<Question13/>}/>
           <Route path='/question_14' element={<Question14/>}/>
+          <Route path='/question_15' element={<Question15/>}/>
+          <Route path='/question_16' element={<Question16/>}/>
+          <Route path='/question_17' element={<Question17/>}/>
+          <Route path='/question_18' element={<Question18/>}/>
+          <Route path='/question_19' element={<Question19/>}/>
+          <Route path='/question_20' element={<Question20/>}/>
+          <Route path='/question_21' element={<Question21/>}/>
           
           <Route path='/lpa' element={<Lpa/>}/>
           <Route path='/general' element={<General/>}/>

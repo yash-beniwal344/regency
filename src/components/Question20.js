@@ -1,18 +1,18 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import left from './images/donor2.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react'
+import Footer from './Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import Footer from './Footer';
+import left from './images/donor3.png';
+import { useNavigate } from 'react-router-dom';
 
 
-const Question14 = () => {
+const Question20 = () => {
     let navigate = useNavigate();
-    const back = () => {
-        navigate('/question_13')
-    }
     const next = () => {
-        navigate('/question_15')
+        navigate('/question_21')
+    }
+    const back = () => {
+        navigate('/question_19')
     }
     return (
         <div className='question14'>
@@ -38,28 +38,33 @@ const Question14 = () => {
 
                                     </div>
                                     <div className="que">
-                                        Does the donor want any replacement
-                                        attorneys?
+                                        Add Preferences and Instructions
                                     </div>
                                     <div className="small">
-                                        Replacement attorneys step in if an original attorney can no longer act.<br /><br />
+                                        You've entered all the essential information needed for the LPA.<br /><br />
 
-                                        A replacement attorney must meet the same requirements as an original attorney. This includes being 18 or over.
-                                    </div>
-                                    <div className="btn">
-                                        <button onClick={next} className='cancel'>Add replacement attorney</button>
-                                        <button onClick={next} className='continue'>Save & Continue</button>
-                                    </div>
+                                        The optional section below lets you add the donor’s preferences or instructions for their attorneys. The donor can state things that the attorneys must or must not do, or give guidance that they’d like their attorneys to follow.
+                                        <br /><br />
 
-                                </div>
+                                        For example, the donor could add preferences about making charitable donations or managing their bank accounts. The donor could add instructions about giving gifts, managing investments or seeking professional tax advice.<br /><br />
+
+
+                                        <input type="text" className='Preferences' />
+                                        <div className="btn">
+
+                                            <button onClick={next} className='continue'>Add & Continue</button>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-<Footer/>
+                <Footer />
             </div>
-            )
+        </div>
+    )
 }
 
-            export default Question14
+export default Question20

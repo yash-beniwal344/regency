@@ -4,6 +4,7 @@ import left from './images/donor2.png';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import Footer from './Footer';
 
 const Question12 = () => {
     let navigate = useNavigate();
@@ -83,7 +84,7 @@ const Question12 = () => {
             </div>
         </div>
     </div>
-
+<Footer/>
 </div>
   )
 }

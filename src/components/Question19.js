@@ -1,21 +1,20 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react'
+import Footer from './Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import left from './images/donor2.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 
-
-const Question14 = () => {
+export const Question19 = () => {
     let navigate = useNavigate();
     const back = () => {
-        navigate('/question_13')
+        navigate('/question_18')
     }
     const next = () => {
-        navigate('/question_15')
+        navigate('/question_20')
     }
     return (
-        <div className='question14'>
+        <div className='question13'>
             <div className="sec-one">
                 <div className="inner-box">
                     <div className="row">
@@ -32,34 +31,35 @@ const Question14 = () => {
                                             <div className='icon'>
                                                 <FontAwesomeIcon icon={faArrowLeft} />
                                             </div>
-                                            <button>Back</button>
+                                            <button >Back</button>
                                         </div>
 
 
                                     </div>
-                                    <div className="que">
-                                        Does the donor want any replacement
-                                        attorneys?
+                                    <div className="que mb-4">
+                                        Who will register the Power of Attorney?
                                     </div>
-                                    <div className="small">
-                                        Replacement attorneys step in if an original attorney can no longer act.<br /><br />
+                                    <div className="options">
+                                        <div className="form-check" onClick={next}>
+                                            Donor
+                                        </div>
+                                        <div className="form-check">
+                                           Attorney
+                                        </div>
 
-                                        A replacement attorney must meet the same requirements as an original attorney. This includes being 18 or over.
+
                                     </div>
                                     <div className="btn">
-                                        <button onClick={next} className='cancel'>Add replacement attorney</button>
-                                        <button onClick={next} className='continue'>Save & Continue</button>
+                                        <button onClick={next} className='continue'>Continue</button>
                                     </div>
+                                </div>
 
-                                </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-<Footer/>
             </div>
-            )
+            <Footer />
+        </div>
+    )
 }
-
-            export default Question14
