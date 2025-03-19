@@ -56,9 +56,14 @@ const Question4 = () => {
                 </div>
                
             </div>
-            <div className="btn">
-                <button onClick={next} >next</button>
-            </div>
+            <div className="row">
+                        <div className="col-9 p-0">
+
+                        </div>
+                        <div className="col-3 p-0">
+                        <button onClick={next}>next</button>
+                        </div>
+                    </div>
         </div>
     </div>
     <Footer/>

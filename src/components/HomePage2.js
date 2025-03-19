@@ -1,8 +1,12 @@
 import React from 'react';
 import img1 from './images/home2.png';
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import logos from './images/logos-line.png';
+
+import logos1 from './images/logos1.png';
+import logos2 from './images/logos2.png';
+import logos3 from './images/logos3.png';
+import logos4 from './images/logos4.png';
+import logos5 from './images/logos5.png';
+import cr from './images/cr.png'
 import Footer from './Footer';
 
 import Plan from './Plan';
@@ -23,23 +27,23 @@ navigate('/login')
                             </div>
                             <div className="small py-2">
                                 <div className="line">
-                                    <div className="icon"> <FontAwesomeIcon icon={faCircleCheck} /></div>
+                                    <div className="icon"><img src={cr} alt="" /></div>
                                     <div className="text">Personalize it to reflect your wishes</div>
                                 </div>
                                 <div className="line">
-                                    <div className="icon"> <FontAwesomeIcon icon={faCircleCheck} /></div>
+                                    <div className="icon"> <img src={cr} alt="" /></div>
                                     <div className="text">Make it truly your own with ease.</div>
                                 </div>
                                 <div className="line">
-                                    <div className="icon"> <FontAwesomeIcon icon={faCircleCheck} /></div>
+                                    <div className="icon"> <img src={cr} alt="" /></div>
                                     <div className="text">Complete in just 15 minutes.</div>
                                 </div>
                                 <div className="line">
-                                    <div className="icon"> <FontAwesomeIcon icon={faCircleCheck} /></div>
+                                    <div className="icon"><img src={cr} alt="" /></div>
                                     <div className="text">Backed by expert guidance. </div>
                                 </div>
                                 <div className="line">
-                                    <div className="icon"> <FontAwesomeIcon icon={faCircleCheck} /></div>
+                                    <div className="icon"> <img src={cr} alt="" /></div>
                                     <div className="text">Starting at just £90</div>
                                 </div>
 
@@ -66,7 +70,11 @@ navigate('/login')
                         As seen on
                     </div>
                     <div className="bott">
-                        <img src={logos} alt='logos-line' />
+                    <img src={logos1} alt='logos-line1' />
+            <img src={logos2} alt='logos-line2' />
+            <img src={logos3} alt='logos-line3' />
+            <img src={logos4} alt='logos-line4' />
+            <img src={logos5} alt='logos-line5' />
                     </div>
                 </div>
             </div>

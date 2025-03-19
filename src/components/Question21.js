@@ -8,7 +8,7 @@ import left from './images/donor3.png';
 const Question21 = () => {
     let navigate = useNavigate();
     const next = ()=>{
-        navigate('/question_22')
+        navigate('/')
     }
     const back = ()=>{
         navigate('/question_20')
@@ -16,7 +16,7 @@ const Question21 = () => {
   return (
     <div className='question13'>
             <div className="sec-one">
-                <div className="inner-box">
+                <div className="inner-box"> 
                     <div className="row">  
                         <div className="col-12 col-md-5 mb-4">
                             <div className="left-img">
@@ -91,15 +91,23 @@ const Question21 = () => {
                                         <label> Replacement Attorneys</label><br />
                                         <input type='text' placeholder='No replacement attorneys' />
                                     </div>
-                                    <div className="one-input">
+                                    <div className="one-input mb-2">
                                         <label>Certificate Provider</label><br />
                                         <input type='text' placeholder='Not added' />
                                     </div>
                                     
-                                    <div className="btn">
-                                        <button onClick={next} className='continue mb-2'>Confirm and Continue</button>
-                                        <button className='cancel'>Save for Later</button>
-                                    </div>
+                                  
+                                    <div className="row text-end">
+                                            <div className="col-12 col-md-4 p-0">
+
+                                            </div>
+                                            <div className="col-12 col-md-5 p-0 mb-1">
+                                            <button onClick={next} className='continue mb-2'>Confirm and Continue</button>
+                                            </div>
+                                            <div className="col-12 col-md-3 p-0 ">
+                                            <button className='cancel'>Save for Later</button>
+                                            </div>
+                                        </div>
                                 </div>
                                 <div className="two">
 

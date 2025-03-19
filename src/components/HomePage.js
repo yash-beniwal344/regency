@@ -4,10 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faCircleCheck, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import line from './images/Vector 32.png';
 import img from './images/bigimg.png';
-import logos from './images/logos-line.png';
+
 import reting1 from './images/reting1.png';
 import reting2 from './images/reting2.png';
 import st1 from './images/st1.png';
+import logos1 from './images/logos1.png';
+import logos2 from './images/logos2.png';
+import logos3 from './images/logos3.png';
+import logos4 from './images/logos4.png';
+import logos5 from './images/logos5.png';
 import img2 from './images/bigimg2.png';
 import comma from './images/comma.png';
 import user1 from './images/user1.png';
@@ -67,7 +72,11 @@ const HomePage = () => {
             As seen on
           </div>
           <div className="bott">
-            <img src={logos} alt='logos-line' />
+            <img src={logos1} alt='logos-line1' />
+            <img src={logos2} alt='logos-line2' />
+            <img src={logos3} alt='logos-line3' />
+            <img src={logos4} alt='logos-line4' />
+            <img src={logos5} alt='logos-line5' />
           </div>
         </div>
       </div>
@@ -76,8 +85,8 @@ const HomePage = () => {
           <div className="row">
             <div className="col-12 col-sm-12 col-md-6 left">
               <div className="top-text">
-                Create Your Will in <br />
-                <span>Just 4 Simple Steps</span>
+                Create Your Will in 
+                <span className='mx-2'>Just 4 Simple Steps</span>
               </div>
               <div className="mid-text">
                 Creating a will doesn't have to be complicated. With our streamlined process, you can secure your family's future in just four easy steps. From answering a few basic questions to securely storing your final document, we guide you every step of the way to ensure peace of mind for you and your loved ones.
@@ -118,7 +127,8 @@ const HomePage = () => {
                 </div>
                 <div className="text-side">
                   <div className="big">
-                    Step 1: Answer a Few Questions
+                  Step 1: Create a Secure Account and Share Your Requirements
+
                   </div>
                   <div className="small">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum

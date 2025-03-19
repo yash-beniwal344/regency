@@ -8,10 +8,10 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Question7 = () => {
     let navigate = useNavigate();
-    const back =()=>{
+    const back = () => {
         navigate('/question_6')
     }
-    const next =()=>{
+    const next = () => {
         navigate('/question_8')
     }
     return (
@@ -32,7 +32,7 @@ const Question7 = () => {
                         Let's get started
                     </div>
 
-                   
+
                     <div className="input">
                         <label>Email Address</label><br />
                         <input type='email' />
@@ -45,8 +45,13 @@ const Question7 = () => {
                         <label>Confirm Password</label><br />
                         <input type='password' />
                     </div>
-                    <div className="btn">
-                        <button onClick={next}>Continue</button>
+                    <div className="row">
+                        <div className="col-12 col-md-8 p-0">
+
+                        </div>
+                        <div className="col-12 col-md-4 p-0 text-end">
+                            <button onClick={next}>Continue</button>
+                        </div>
                     </div>
 
                 </div>

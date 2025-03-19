@@ -46,11 +46,18 @@ const Question14 = () => {
 
                                         A replacement attorney must meet the same requirements as an original attorney. This includes being 18 or over.
                                     </div>
-                                    <div className="btn">
-                                        <button onClick={next} className='cancel'>Add replacement attorney</button>
-                                        <button onClick={next} className='continue'>Save & Continue</button>
-                                    </div>
+                                   
+                                    <div className="row text-center">
+                                        <div className="col-12 col-md-3 p-0">
 
+                                        </div>
+                                        <div className="col-12 col-md-5 p-0 mb-2">
+                                        <button onClick={next} className='cancel'>Add replacement attorney</button>
+                                        </div>
+                                        <div className="col-12 col-md-4 p-0 ">
+                                        <button onClick={next} className='continue'>Save & Continue</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 </div>
                             </div>

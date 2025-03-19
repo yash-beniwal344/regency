@@ -62,9 +62,15 @@ const Question1 = () => {
                             </label>
                         </div>
                     </div>
-                    <div className="btn">
+                    <div className="row">
+                        <div className="col-9 p-0">
+
+                        </div>
+                        <div className="col-3 p-0">
                         <button onClick={next}>next</button>
+                        </div>
                     </div>
+                 
                 </div>
             </div>
             <Footer />

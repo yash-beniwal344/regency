@@ -83,9 +83,14 @@ const Question10 = () => {
                                         <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckChecked" />The donor is unable to sign or make a mark
                                         on the LPA
                                     </div>
-                                    <div className="btn">
-                                        <button onClick={next} >Add Donor</button>
-                                    </div>
+                                    <div className="row">
+                        <div className="col-12 col-md-8 p-0">
+
+                        </div>
+                        <div className="col-12 col-md-4 p-0 text-end">
+                            <button onClick={next}>Add Donor</button>
+                        </div>
+                    </div>
                                 </div>
                                 <div className="two">
 

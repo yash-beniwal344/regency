@@ -50,11 +50,15 @@ const Question20 = () => {
 
 
                                         <input type="text" className='Preferences' />
-                                        <div className="btn">
+                                      
+                                        <div className="row">
+                                        <div className="col-12 col-md-8 p-0">
 
-                                            <button onClick={next} className='continue'>Add & Continue</button>
                                         </div>
-
+                                        <div className="col-12 col-md-4 p-0 text-end">
+                                        <button onClick={next} className='continue' >Add & Continue</button>
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>

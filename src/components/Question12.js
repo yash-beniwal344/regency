@@ -52,9 +52,14 @@ const Question12 = () => {
                             The most important thing is that the attorneys are people the donor can trust to respect their wishes and act in their best interests.<br/><br/>
                             You will be asked if the donor would like to add replacement attorneys in a separate question. These would step in if the original attorneys are unable or unwilling to continue.<br/><br/>
                             </div>
-                            <div className="btn">
-                                <button onClick={next} >Add Donor</button>
-                            </div>
+                            <div className="row">
+                                        <div className="col-12 col-md-8 p-0">
+
+                                        </div>
+                                        <div className="col-12 col-md-4 p-0 text-end">
+                                            <button onClick={next}>Continue</button>
+                                        </div>
+                                    </div>
                         </div>
                         <div className="two">
                         <div className="que">

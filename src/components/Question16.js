@@ -55,11 +55,18 @@ const Question16 = () => {
                                         be independent <br />
                                         The certificate provider signs the LPA after the donor. <br /><br />
 
-                                        <div className="btn">
-                                            <button onClick={next} className='cancel'>cancel</button>
-                                            <button onClick={next} className='continue'>Add a certificate provider</button>
-                                        </div>
 
+                                        <div className="row text-end">
+                                            <div className="col-12 col-md-3 p-0">
+
+                                            </div>
+                                            <div className="col-12 col-md-4 p-0 mb-2">
+                                                <button onClick={next} className='cancel'>cancel</button>
+                                            </div>
+                                            <div className="col-12 col-md-5 p-0 ">
+                                                <button onClick={next} className='continue'>Add a certificate provider</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -68,8 +75,8 @@ const Question16 = () => {
                 </div>
                 <Footer />
             </div>
-            </div>
-            )
+        </div>
+    )
 }
 
-            export default Question16
+export default Question16

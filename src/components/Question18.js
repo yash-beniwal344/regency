@@ -86,9 +86,14 @@ You will be given a form to download and send to any people to notify once you h
                                 <span>-</span>Add another attorney
                             </div>
 
-                            <div className="btn">
-                                <button onClick={next} className='continue'>Add Attorney</button>
-                            </div>
+                             <div className="row">
+                                        <div className="col-12 col-md-8 p-0">
+
+                                        </div>
+                                        <div className="col-12 col-md-4 p-0 text-end">
+                                        <button onClick={next} className='continue' >Add Attorney</button>
+                                        </div>
+                                    </div>
                         </div>
                         <div className="two">
 

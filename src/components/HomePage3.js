@@ -1,6 +1,10 @@
 import React from 'react';
 
-import logos from './images/logos-line.png';
+import logos1 from './images/logos1.png';
+import logos2 from './images/logos2.png';
+import logos3 from './images/logos3.png';
+import logos4 from './images/logos4.png';
+import logos5 from './images/logos5.png';
 import Plan from './Plan';
 import Footer from './Footer';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
@@ -41,7 +45,11 @@ const HomePage3 = () => {
                         As seen on
                     </div>
                     <div className="bott">
-                        <img src={logos} alt='logos-line' />
+                    <img src={logos1} alt='logos-line1' />
+            <img src={logos2} alt='logos-line2' />
+            <img src={logos3} alt='logos-line3' />
+            <img src={logos4} alt='logos-line4' />
+            <img src={logos5} alt='logos-line5' />
                     </div>
                 </div>
             </div>

@@ -43,8 +43,13 @@ const Question3 = () => {
                         <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
                         <label class="btn bg-primary-subtle" for="option2">No</label>
                     </div>
-                    <div className="btn">
+                    <div className="row">
+                        <div className="col-9 p-0">
+
+                        </div>
+                        <div className="col-3 p-0">
                         <button onClick={next}>next</button>
+                        </div>
                     </div>
                 </div>
             </div>

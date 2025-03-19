@@ -52,16 +52,21 @@ const Question11 = () => {
                                     </div>
                                     <div className="box2">
                                         <div className="big">
-                                        only if the donor does not have mental capacity
+                                            only if the donor does not have mental capacity
                                         </div>
                                         <div className="small">
-                                        This means the attorneys can only act if the donor does not have mental capacity to make certain decisions themselves. But be careful – this option can make the LPA a lot less useful. Every time the attorneys try to use the LPA, they might be asked to prove that the donor does not have mental capacity
+                                            This means the attorneys can only act if the donor does not have mental capacity to make certain decisions themselves. But be careful – this option can make the LPA a lot less useful. Every time the attorneys try to use the LPA, they might be asked to prove that the donor does not have mental capacity
                                         </div>
                                     </div>
 
 
-                                    <div className="btn">
-                                        <button onClick={next} >Continue</button>
+                                    <div className="row">
+                                        <div className="col-12 col-md-8 p-0">
+
+                                        </div>
+                                        <div className="col-12 col-md-4 p-0 text-end">
+                                            <button onClick={next}>Continue</button>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -70,7 +75,7 @@ const Question11 = () => {
                     </div>
                 </div>
             </div>
-<Footer/>
+            <Footer />
         </div>
     )
 }

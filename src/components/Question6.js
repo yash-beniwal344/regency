@@ -32,9 +32,14 @@ const Question6 = () => {
             Complete Your Lasting Power of 
             Attorney for Only £99
             </div>
-            <div className="btn">
-                <button onClick={next} >Start my LPA</button>
-            </div>
+            <div className="row">
+                        <div className="col-12 col-md-8 p-0">
+
+                        </div>
+                        <div className="col-12 col-md-4 p-0 text-end">
+                        <button onClick={next}>Start my LPA</button>
+                        </div>
+                    </div>
         </div>
     </div>
     <Footer />

@@ -49,8 +49,13 @@ export const Question19 = () => {
 
 
                                     </div>
-                                    <div className="btn">
-                                        <button onClick={next} className='continue'>Continue</button>
+                                    <div className="row">
+                                        <div className="col-12 col-md-8 p-0">
+
+                                        </div>
+                                        <div className="col-12 col-md-4 p-0 text-end">
+                                        <button onClick={next} className='continue' >Continue</button>
+                                        </div>
                                     </div>
                                 </div>
 

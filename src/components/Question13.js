@@ -83,7 +83,15 @@ const Question13 = () => {
                                     </div>
 
                                     <div className="btn">
+                                       
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-12 col-md-8 p-0">
+
+                                        </div>
+                                        <div className="col-12 col-md-4 p-0 text-end">
                                         <button onClick={next} className='continue' >Add Attorney</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="two">

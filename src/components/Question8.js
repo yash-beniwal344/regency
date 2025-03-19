@@ -36,7 +36,7 @@ const Question8 = () => {
                 <div className="form-check" onClick={next}>
                 Property and financial affairs
                 </div>
-                <div className="form-check">
+                <div className="form-check"  onClick={next}>
                  Health and Welfare
                 </div>
 
