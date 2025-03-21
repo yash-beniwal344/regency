@@ -1,8 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from './Footer'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Login = () => {
+    const [email,setemail]= useState();
+    const [password,setpassword]= useState();
+    const navigate = useNavigate();
+
+    const emailvalue = (e)=>{
+        setemail(e.target.value)
+    }
+    const passwordvalue = (e)=>{
+        setpassword(e.target.value)
+    }
+
+    const submit = ()=>{
+        axios({
+            method:"post",
+            url:"http://localhost:2350/login",
+            data:{
+                email:email,
+                password:password
+            }
+        }).then((response)=>{
+            if(response.data.status===true){
+                localStorage.setItem('user',JSON.stringify(response.data.data))
+                localStorage.setItem('token',JSON.stringify(response.data.auth))
+                toast.success(response.data.message);
+               
+                navigate('/')
+            }
+            else{
+                toast.error(response.data.message)
+            }
+        }).catch((error)=>{
+            console.log(error);
+            toast.error('backend problem')
+            
+        })
+    }
     return (
         <div className='login'>
             <div className="sec-one">
@@ -15,7 +53,7 @@ const Login = () => {
                     </div>
                     <div className="email">
                         <label>Email Address</label><br/>
-                        <input type='email' />
+                        <input type='email' value={email} onChange={emailvalue}/>
                     </div>
                     <div className="password">
                         <div className="label">
@@ -25,10 +63,13 @@ const Login = () => {
                             </div>
                         </div>
 
-                        <input type='text'/>
+                        <input type='password' value={password} onChange={passwordvalue}/>
                     </div>
-                    <div className="btn">
-                    <button>login</button>
+                    <div className="row text-center mb-3">
+                        <div className="col-12  p-0">
+                            <button onClick={submit}>login</button>
+                        </div>
+
                     </div>
                     <div className="register">
                     Don’t have an account? <Link to='/signup' >Register.</Link>

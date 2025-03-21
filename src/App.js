@@ -36,6 +36,8 @@ import { Question19 } from './components/Question19';
 import Question20 from './components/Question20';
 import Question21 from './components/Question21';
 
+import Otp from './components/Otp';
+
 
 function App() {
   return (
@@ -44,7 +46,8 @@ function App() {
        <BrowserRouter>
        <Navbar/>
          <Routes>
-          <Route path='/' element={<HomePage/>}/>
+         <Route path='/' element={<HomePage/>}/>
+  
           <Route path='/will' element={<HomePage2/>}/>
           <Route path='/start' element={<HomePage3/>}/>
           <Route path='/question_1' element={<Question1/>}/>
@@ -68,17 +71,21 @@ function App() {
           <Route path='/question_19' element={<Question19/>}/>
           <Route path='/question_20' element={<Question20/>}/>
           <Route path='/question_21' element={<Question21/>}/>
-          
           <Route path='/lpa' element={<Lpa/>}/>
           <Route path='/general' element={<General/>}/>
           <Route path='/legalservice' element={<Legalservice/>}/>
           <Route path='/Calculators' element={<Calculators/>}/>
           <Route path='/trusts' element={<Trusts/>}/>
           <Route path='/livingtrusts' element={<Livingtursts/>}/>
+      
+       
+        <Route path='/otp' element={<Otp/>}/>
+       
+         
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/forgot' element={<Forgot/>}/>
-           
+    
          </Routes>
        
        </BrowserRouter>
@@ -87,3 +94,4 @@ function App() {
 }
 
 export default App;
+          
