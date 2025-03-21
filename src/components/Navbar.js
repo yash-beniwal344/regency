@@ -51,7 +51,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <li><Link onClick={logout}>Logout</Link></li>
+            <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/login'>login</Link>}</li>
             <li className='startbtn  '><Link to='/start'>Get Started</Link></li>
           </ul>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
               <li><Link to='/Calculators' onClick={clicked}>Calculators</Link></li>
               <li><Link to='/general' onClick={clicked}>General Service</Link></li>
               <li><Link to='/legalservice' onClick={clicked}>Other Legal Service</Link></li>
-              <li><Link onClick={logout}>Logout</Link></li>
+              <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/login'>login</Link>}</li>
               <li><Link to='/start' onClick={clicked}>Get Started</Link></li>
             </ul>
             {/* :

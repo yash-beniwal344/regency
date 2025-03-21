@@ -13,20 +13,21 @@ const Forgot = () => {
     const submit = ()=>{
         axios({
             method:'post',
-            url:"http://localhost:2350/forgot",
+            url:`${process.env.REACT_APP_API_KEY}/forgot`,
             data:{
                 email:email
             }
         }).then((response)=>{
             if(response.data.status===true){
+           
                 toast(response.data.message);
-                naviagte('/otp')
+                naviagte('/otp',{state:{email:email}})
             }
             else{
                 toast(response.data.message);
             }
         }).catch((error)=>{
-            toast('backend problem');
+            toast('something went wrong');
             console.log(error);
             
         })

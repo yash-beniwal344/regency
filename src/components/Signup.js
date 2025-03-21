@@ -24,7 +24,7 @@ const Signup = () => {
    
         axios({
             method: "post",
-            url: 'http://localhost:2350/signup',
+            url: `${process.env.REACT_APP_API_KEY}/signup`,
             data: {
                 name: name,
                 email: email,
@@ -43,7 +43,7 @@ const Signup = () => {
             }
         }).catch((error) => {
             console.log(error);
-            toast.error("backend problem")
+            toast.error("something went wrong")
         })
     }
     return (

@@ -117,8 +117,8 @@
 .navbar-one .navbar .main-ul li:hover .trustdropdown {
   display: block;
   position: absolute;
-  top: 62px;
-  left: 55%;
+  top: 60px;
+  left: 50%;
   background-color: white;
   color: black;
   padding: 10px 0;
@@ -151,8 +151,8 @@
 .navbar-one .navbar .main-ul li:hover .legaldropdown {
   display: block;
   position: absolute;
-  top: 62px;
-  left: 76%;
+  top: 60px;
+  left: 70%;
   background-color: white;
   color: black;
   padding: 10px 0;
@@ -4835,6 +4835,88 @@ margin-right: 5px;
 }
 .forgot .sec-one .inner-box .register a {
   color: rgba(84, 189, 149, 1);
+}
+
+
+/* createpass *//* createpass *//* createpass *//* createpass *//* createpass *//* createpass */
+
+
+.createpass .sec-one {
+  padding: 50px 0;
+  background: linear-gradient(90deg, #f5eacf, #eaf5f1);
+}
+
+.createpass .sec-one .inner-box {
+  width: 40%;
+  margin: auto;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: start;
+}
+@media only screen and (max-width: 767px) {
+  .createpass .sec-one .inner-box {
+    width: 80%;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .createpass .sec-one .inner-box {
+    width: 60%;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: start;
+  }
+}
+.createpass .sec-one .inner-box .welcome {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.createpass .sec-one .inner-box .sm-text {
+  color: rgba(137, 137, 137, 1);
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.createpass .sec-one .inner-box .email label {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.createpass .sec-one .inner-box .email input {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 20px;
+  border-radius: 9px;
+  font-weight: 500;
+  border: 1.5px solid #90909078;
+  margin-bottom: 20px;
+}
+
+.createpass .sec-one .inner-box .btn {
+  text-align: center;
+  width: 100%;
+}
+.createpass .sec-one .inner-box .btn button {
+  background-color: #54bd95;
+  padding: 8px 50px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 /* lpa lpa lpa lpa lpa lpa lpa lpa lpa lpa  */

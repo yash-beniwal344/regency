@@ -37,6 +37,7 @@ import Question20 from './components/Question20';
 import Question21 from './components/Question21';
 
 import Otp from './components/Otp';
+import CreatePass from './components/CreatePass';
 
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
        <BrowserRouter>
        <Navbar/>
          <Routes>
-         <Route path='/' element={<HomePage/>}/>
+          <Route path='/' element={<HomePage/>}/>
   
           <Route path='/will' element={<HomePage2/>}/>
           <Route path='/start' element={<HomePage3/>}/>
@@ -80,6 +81,7 @@ function App() {
       
        
         <Route path='/otp' element={<Otp/>}/>
+        <Route path='/createpass' element={<CreatePass/>}/>
        
          
           <Route path='/login' element={<Login/>}/>

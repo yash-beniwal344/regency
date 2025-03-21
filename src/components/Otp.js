@@ -1,31 +1,39 @@
 import React, { useState } from 'react'
 import Footer from './Footer'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+;
 
 const Otp = () => {
     const [otp ,setotp] = useState();
+    const navigate = useNavigate();
+    const location = useLocation();
     const otpvalue = (e)=>{
         setotp(e.target.value);
     }
     const submit = ()=>{
+      const email = location.state.email;
     axios({
         method:'post',
-        url:'http://localhost:2350/otp',
+        url:`${process.env.REACT_APP_API_KEY}/otp`,
         data:{
-            otp:otp
+            otp:otp,
+            email:email
+         
         }
     }).then((response)=>{
         if(response.data.status===true){
-            toast(response.data.message)
+           
+            toast(response.data.message);
+            navigate('/createPass',{state:{email}})
         }
         else{
             toast(response.data.message) 
         }
     }).catch((error)=>{
         console.log(error);
-        toast('backend error')
+        toast('something went wrong')
     })
     }
   return (

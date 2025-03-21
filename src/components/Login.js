@@ -19,7 +19,7 @@ const Login = () => {
     const submit = ()=>{
         axios({
             method:"post",
-            url:"http://localhost:2350/login",
+            url:`${process.env.REACT_APP_API_KEY}/login`,
             data:{
                 email:email,
                 password:password
@@ -37,7 +37,7 @@ const Login = () => {
             }
         }).catch((error)=>{
             console.log(error);
-            toast.error('backend problem')
+            toast.error('something went wrong')
             
         })
     }
