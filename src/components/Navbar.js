@@ -4,6 +4,7 @@ import logo from './images/logo BLACK 1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
+
 const Navbar = () => {
   const auth = localStorage.getItem('user')
   let navigate = useNavigate();
@@ -51,7 +52,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/login'>login</Link>}</li>
+            <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/signup'>Signup</Link>}</li>
             <li className='startbtn  '><Link to='/start'>Get Started</Link></li>
           </ul>
 
@@ -83,7 +84,7 @@ const Navbar = () => {
               <li><Link to='/Calculators' onClick={clicked}>Calculators</Link></li>
               <li><Link to='/general' onClick={clicked}>General Service</Link></li>
               <li><Link to='/legalservice' onClick={clicked}>Other Legal Service</Link></li>
-              <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/login'>login</Link>}</li>
+              <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/signup'>Signup</Link>}</li>
               <li><Link to='/start' onClick={clicked}>Get Started</Link></li>
             </ul>
             {/* :

@@ -3,7 +3,7 @@ import Footer from './Footer'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-;
+
 
 const Otp = () => {
     const [otp ,setotp] = useState();
@@ -25,15 +25,15 @@ const Otp = () => {
     }).then((response)=>{
         if(response.data.status===true){
            
-            toast(response.data.message);
+            toast.success(response.data.message);
             navigate('/createPass',{state:{email}})
         }
         else{
-            toast(response.data.message) 
+            toast.error(response.data.message) 
         }
     }).catch((error)=>{
         console.log(error);
-        toast('something went wrong')
+        toast.error('something went wrong')
     })
     }
   return (

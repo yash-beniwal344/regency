@@ -20,14 +20,14 @@ const Forgot = () => {
         }).then((response)=>{
             if(response.data.status===true){
            
-                toast(response.data.message);
+                toast.success(response.data.message);
                 naviagte('/otp',{state:{email:email}})
             }
             else{
-                toast(response.data.message);
+                toast.error(response.data.message);
             }
         }).catch((error)=>{
-            toast('something went wrong');
+            toast.error('something went wrong');
             console.log(error);
             
         })
