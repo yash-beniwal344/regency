@@ -52,7 +52,7 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/signup'>Signup</Link>}</li>
+            <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/signup' >Signup</Link>}</li>
             <li className='startbtn  '><Link to='/start'>Get Started</Link></li>
           </ul>
 
@@ -69,7 +69,9 @@ const Navbar = () => {
         <div className="navbar">
           <img src={logo} alt='logo' className='logo' onClick={home} />
           <ul className='main-ul'>
-            <li><Link onClick={() => setshowlink(!showlink)}>{showlink ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}</Link></li>
+            <li>
+              <Link onClick={() => setshowlink(!showlink)}>{showlink ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}</Link>
+            </li>
 
           </ul>
         </div>
@@ -84,7 +86,7 @@ const Navbar = () => {
               <li><Link to='/Calculators' onClick={clicked}>Calculators</Link></li>
               <li><Link to='/general' onClick={clicked}>General Service</Link></li>
               <li><Link to='/legalservice' onClick={clicked}>Other Legal Service</Link></li>
-              <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/signup'>Signup</Link>}</li>
+              <li>{auth?<Link onClick={logout}>Logout</Link>:<Link to='/signup'  onClick={clicked}>Signup</Link>}</li>
               <li><Link to='/start' onClick={clicked}>Get Started</Link></li>
             </ul>
             {/* :
